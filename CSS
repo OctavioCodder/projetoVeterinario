@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kanit:ital,wght@0,400;1,300&family=Lilita+One&family=Nunito:wght@300&family=Poppins:wght@100;200;300;400;500;600;700&family=Press+Start+2P&family=Sarala:wght@400;700&display=swap');
+
+:root{
+    --green:#000;
+    --black:#19D3DA;
+    --light-color:#EEEEEE;
+    --box-shadow:0.6rem 0.6rem 0 #A5D7E8;
+    --text-shadow:0.3rem 0.3rem 0 #6B728E;
+    --border:.3rem solid var(--green);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    background: #686D76;
+}
+
+section{
+    padding: 100px 3%;
+}
+
+.textoCursos{
+    text-align: center;
+    padding-bottom: 80px;
+    text-shadow: var(--text-shadow);
+    color: var(--black);
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.textoCursos span{
+    text-transform: uppercase;
+    color: var(--green);
+}
+
+.botao{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    padding-left: 10px;
+    border: var(--border);
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+    color: var(--black);
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.4s ease-in-out;
+}
+
+.botao span{
+    padding: 7px 9px;
+    border-radius: 5px;
+    background: var(--green);
+    color: var(--black);
+    margin-left: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.botao:hover{
+    background: #000;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.botao:hover span{
+    color: #000;
+    background: #E4DCCF;
+    margin-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.cabecalho{
+    padding: 32px 12%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 15px #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #686D76;
+}
+
+.cabecalho .logo{
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+    color: var(--black);
+}
+
+.cabecalho .logo i{
+    color: var(--green);
+}
+
+.cabecalho .atalhos a{
+    font-size: 13px;
+    color: var(--light-color);
+    margin-left: 25px;
+    transition: 0.4s ease-in-out;
+}
+
+.cabecalho .atalhos a:hover{
+    color: var(--green);
+}
+
+#botaoMenu{
+    font-size: 27px;
+    border-radius: 4px;
+    background: #7B8FA1;
+    color: var(--green);
+    padding: 7px 7px;
+    cursor: pointer;
+    display: none;
+}
+
+.PaginaInicial{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.PaginaInicial .imagem{
+    flex: 1 1 60rem;
+}
+
+.PaginaInicial .imagem img{
+    padding-top: 80px;
+    width: 101%;
+}
+
+.PaginaInicial .textoInicial{
+    flex: 1 1 40rem;
+}
+
+.PaginaInicial .textoInicial h3{
+    font-size: 43px;
+    color: var(--black);
+    line-height: 1.5;
+    text-shadow: var(--text-shadow);
+}
+
+.PaginaInicial .textoInicial p{
+    font-size: 15px;
+    color: var(--green);
+    line-height: 2;
+    padding: 8px 0;
+}
+
+.nossosServicos{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background: #686D76;
+}
+
+.nossosServicos .icones{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+}
+
+.nossosServicos .icones i{
+    color: #000;
+    font-size: 55px;
+    padding-bottom: 15px;
+}
+
+.nossosServicos .icones h3{
+    font-size: 28px;
+    padding-bottom: 5px;
+}
+
+.nossosServicos .icones p{
+    font-size: 18px;
+    color: var(--light-color);
+    padding: 10px 0;
+}
+
+.cursos .cardServico{
+    width: 280px;
+    height: 420px;
+    background-color: #4b4b4b;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.cursos .cardServico img{
+    height: 230px;
+    width: 80%;
+    border-radius: 12px;
+}
+
+.cursos .cardServico h3{
+    margin: 15px 0;
+    font-size: 15px;
+    color: #19D3DA;
+}
+
+.cursos .cardServico p{
+    line-height: 2;
+    font-size: 12px;
+    color: var(--light-color);
+}
+
+.clinica24h .cartaoClinica24h{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.clinica24h .cartaoClinica24h .imagem{
+    flex: 1 1 100px;
+}
+
+.clinica24h .cartaoClinica24h .imagem img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.clinica24h .cartaoClinica24h .textoClinica24h{
+    text-align: center;
+    flex: 1 1 100px;
+}
+
+.clinica24h .cartaoClinica24h .textoClinica24h h3{
+    font-size: 30px;
+    color: var(--black);
+}
+
+.clinica24h .cartaoClinica24h .textoClinica24h p{
+    padding: 10px;
+    line-height: 2;
+    font-size: 15px;
+    color: var(--light-color);
+}
+
+.nossosProfissionais .profissionais{
+    position: relative;
+    width: 450px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.nossosProfissionais .profissionais img{
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.nossosProfissionais .profissionais h3{
+    margin-top: 16px;
+    font-size: 18px;
+    text-align: center;
+    color: #19D3DA;
+}
+
+.nossosProfissionais .profissionais .redesSociais{
+    position: absolute;
+    top: 12px; left: -60px;
+    transition: 0.3s ease-in-out;
+}
+
+.nossosProfissionais .profissionais:hover .redesSociais{
+    left: 20px;
+}
+
+.nossosProfissionais .profissionais .redesSociais a{
+    display: block;
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 12px;
+    background-color: #F6F1F1;
+    color: #454545;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.nossosProfissionais .profissionais .redesSociais a:hover{
+    background-color: #4b4b4b;
+    color: #19D3DA;
+}
+
+.suaOpiniao .conteudoSuaOpiniao{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.suaOpiniao .conteudoSuaOpiniao .mapa{
+    flex: 1 1 45rem;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form{
+    flex: 1 1 40rem;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form .box{
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    background-color: #454545;
+    font-size: 12px;
+    color: #F6F1F1;
+    padding: 12px;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form span{
+    font-size: 12px;
+    color: #F6F1F1;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form .sexo{
+    margin-top: 12px;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form .sexo label{
+    font-size: 14px;
+    color: #F6F1F1;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form .sexo #female{
+    margin-left: 10px;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form .sexo input{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #F6F1F1;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form .sexo input:checked{
+    background-color: #19D3DA;
+    border-radius: 50%;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form .sexo #male:checked ~ label[for="male"]{
+    color: #19D3DA;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form .sexo #female:checked ~ label[for="female"]{
+    color: #19D3DA;
+}
+
+.feedbacks .conteudoComentario{
+    border-radius: 15px;
+    background-color: #454545;
+    padding: 20px;
+    margin-bottom: 46px;
+}
+
+.feedbacks .conteudoComentario p{
+    line-height: 2;
+    font-size: 13px;
+    color: var(--light-color);
+}
+
+.feedbacks .conteudoComentario .usuarioComentario{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.feedbacks .conteudoComentario .usuarioComentario img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedbacks .conteudoComentario .usuarioComentario h3{
+    font-size: 16px;
+    color: #19D3DA;
+}
+
+.feedbacks .conteudoComentario .usuarioComentario .estrelas i{
+    font-size: 15px;
+    color: #FFD95A;
+}
+
+.nossasInformacoes .conteudoInformacoes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.nossasInformacoes .conteudoInformacoes .linksDirecionamentos h3{
+    font-size: 21px;
+    color: var(--black);
+    padding: 15px 0;
+}
+
+.nossasInformacoes .conteudoInformacoes .linksDirecionamentos a{
+    display: block;
+    font-size: 15px;
+    color: var(--light-color);
+    padding: 10px 0;
+}
+
+.nossasInformacoes .conteudoInformacoes .linksDirecionamentos a i{
+    padding-right: 8px;
+    color: var(--green);
+    transition: 0.3s ease-in-out;
+}
+
+.nossasInformacoes .conteudoInformacoes .linksDirecionamentos a:hover i{
+    padding-right: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.nossasInformacoes .creditos{
+    padding: 10px; padding-top: 25px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--light-color);
+    border-top: 2px solid #000;
+}
+
+.nossasInformacoes .creditos span{
+    color: var(--green);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 997px){
+
+    html{
+        font-size: 60%;
+    }
+
+    .cabecalho{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 770px){
+
+    #botaoMenu{
+        display: initial;
+    }
+
+    .cabecalho .atalhos{
+        position: absolute;
+        top: 120%; right: 30px;
+        border-radius: 15px;
+        box-shadow: var(--box-shadow);
+        width: 32rem;
+        border: var(--border);
+        background: #E4DCCF;
+        transform: scale(0);    
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+
+    .cabecalho .atalhos.active{
+        transform: scale(1);
+        opacity: 1;
+        transition: 0.2s ease-out;
+    }
+
+
+    .cabecalho .atalhos a{
+        font-size: 12px;
+        display: block;
+        margin: 25px;
+    }
+
+}
+
+@media (max-width: 465px){
+
+    html{
+        font-size: 55%;
+    }
+}
