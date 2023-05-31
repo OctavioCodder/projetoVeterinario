@@ -1,0 +1,75 @@
+let menu = document.querySelector('#botaoMenu');
+let atalhos = document.querySelector('.atalhos');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    atalhos.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    atalhos.classList.remove('active');
+}
+
+var swiper = new Swiper(".bordasServicos", {
+    spaceBetween: 20,
+    grabCursor:true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+    },
+    breakpoints: {
+        540: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+    },
+  });
+
+  var swiper = new Swiper(".todosProfissionais", {
+    spaceBetween: 20,
+    grabCursor:true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+    },
+    breakpoints: {
+        540: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+    },
+  });
+
+  var swiper = new Swiper(".feedbacks", {
+    spaceBetween: 20,
+    grabCursor:true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+    },
+    breakpoints: {
+        540: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+    },
+  });
